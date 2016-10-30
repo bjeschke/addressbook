@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content=""/>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/styles.css"/>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="js/default.js"></script>
+</head>
+<body>
+
+	<div class="page">
+	<div class="container">
+		<div class="userlist col-md-6 col-lg-6 col-xs-12">
+			<h1>All Contacts</h1>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>First name</th>
+						<th>Last name</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr id="user1" class="user">
+						<td class="firstname"></td>
+						<td class="lastname"></td>
+						<td class="userid"></td>
+					</tr>
+					<tr id="user2" class="user">
+						<td class="firstname"></td>
+						<td class="lastname"></td>
+						<td class="userid"></td>
+					</tr>
+					<tr id="user3" class="user">
+						<td class="firstname"></td>
+						<td class="lastname"></td>
+						<td class="userid"></td>
+					</tr>
+					<tr id="user4" class="user">
+						<td class="firstname"></td>
+						<td class="lastname"></td>
+						<td class="userid"></td>
+					</tr>
+					<tr id="user5" class="user">
+						<td class="firstname"></td>
+						<td class="lastname"></td>
+						<td class="userid"></td>
+					</tr>
+				</tbody>
+			</table>
+			<div id="pagnation"></div>
+		</div>
+		<div class="userdetail col-md-6 col-lg-6 col-xs-12">
+			<h1>Contact Details</h1>
+			<dl>
+				<dt>Firstname</dt>
+				<dd id="detail_firstname"></dd>
+			</dl>
+			<dl>
+				<dt>Lastname</dt>
+				<dd id="detail_lastname"></dd>
+			</dl>
+			<dl>		
+				<dt>Number</dt>
+				<dd id="detail_number"></dd>
+			</dl>
+			<dl>	
+				<dt>Street</dt>
+				<dd id="detail_street"></dd>
+			</dl>
+			<dl>	
+				<dt>Suburb</dt>
+				<dd id="detail_suburb"></dd>
+			</dl>
+			<dl>	
+				<dt>State</dt>
+				<dd id="detail_state"></dd>
+				<dd id="detail_id" class="hidden"></dd>
+			</dl>
+			<button id="edit_button">Edit</button>
+			<button id="msgdelete_button">Delete</button>
+		</div>
+	</div>
+	<div id="bg_layer"></div>
+	<div class="userdetaillayer" id="userdetaillayer">
+		<div class="item">
+			<label for="edit_firstname">Firstname</label>
+			<input type="text" name="edit_firstname" id="edit_firstname" />
+		</div>
+		<div class="item">
+			<label for="edit_lastname">Lastname</label>
+			<input type="text" name="edit_lastname" id="edit_lastname" />
+		</div>
+		<div class="item">
+			<label for="edit_number">Number</label>
+			<input type="text" name="edit_number" id="edit_number" />
+		</div>
+		<div class="item">
+			<label for="edit_street">Street</label>
+			<input type="text" name="edit_street" id="edit_street" />
+		</div>
+		<div class="item">
+			<label for="edit_suburb">Suburb</label>
+			<input type="text" name="edit_suburb" id="edit_suburb" />
+		</div>
+		<div class="item">
+			<label for="state">State</label>
+			<select name="edit_state" id="edit_state">
+				<option value="NSW">NSW</option>
+				<option value="WA">WA</option>
+				<option value="QLD">QLD</option>
+				<option value="VIC">VIC</option>
+				<option value="SA">SA</option>
+				<option value="TAS">TAS</option>
+				<option value="NT">NT</option>
+			</select>
+		</div>		
+		<button id="save_button">Save</button>
+		<button id="close_button">Close</button>		
+	</div>
+	
+	</div>
+</body>
+</html>
